@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body nav {
+  background-color: #65eb89;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+body nav ul {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body nav ul li {
+  list-style: none;
+  margin: 1rem;
+}
+
+body nav ul li a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+body nav ul li a:hover {
+  color: white;
+}
+
+body main section.main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 70vh;
+  background-color: white;
+}
+
+body main section.main-area div.info {
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+}
+
+body main section.main-area div.info h1 {
+  font-size: 3.5rem;
+}
+
+body main section.main-area div.info h2 {
+  font-size: 1rem;
+}
+
+body main section.main-area div.info a {
+  color: white;
+  background-color: #36d48a;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body main section.main-area div.info a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body main section.main-area img {
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+  max-width: 60vh;
+}
+
+body main section.about-me {
+  background-color: #e7ffe9;
+  padding: 5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section.about-me div.desc {
+  width: 50%;
+  text-align: center;
+}
+
+body main section.about-me div.desc h2 {
+  font-size: 2rem;
+}
+
+body main section.about-me div.progress-area {
+  width: 70%;
+}
+
+body main section.about-me div.progress-area p {
+  margin: 0.5rem 0rem;
+}
+
+body main section.about-me div.progress-area .progress-bar-area {
+  margin-top: 2rem;
+}
+
+body main section.resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem;
+}
+
+body main section.resume section.table {
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 500px;
+          flex: 5 1 500px;
+  padding: 2rem;
+}
+
+body main section.resume section.table table {
+  border-collapse: collapse;
+}
+
+body main section.resume section.table table tr {
+  border-bottom: 2px solid grey;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body main section.resume section.table table tr:hover {
+  background-color: #b8ffde;
+}
+
+body main section.resume section.table table tr td {
+  padding: 1rem;
+}
+
+body main section.resume section.picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  position: relative;
+}
+
+body main section.resume section.picture img {
+  margin-top: 2rem;
+  width: 40vw;
+}
+
+body main section.resume section.picture div.greenRect {
+  width: 30vw;
+  height: 90vh;
+  border: 10px solid #c3ffc8;
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  z-index: -1;
+}
+
+body main section.resume section.picture div.greenRect2 {
+  width: 50vw;
+  height: 40vh;
+  border: 10px solid #c3ffc8;
+  position: absolute;
+  top: 300px;
+  left: -300px;
+  z-index: -1;
+}
+
+body main section.resume section.picture div.greenRect3 {
+  width: 50vw;
+  height: 40vh;
+  border: 10px solid #c3ffc8;
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  z-index: -1;
+}
+
+#about-me {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+.main-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-area img {
+  border-radius: 30px;
+}
+
+.main-area .info {
+  margin-right: 5rem;
+  display: inline-block;
+  height: 100%;
+  width: 800px;
+}
+
+.main-area .info p {
+  font-size: 2.5rem;
+  color: #4ed572;
+}
+
+.skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: auto;
+}
+
+.block {
+  width: 50%;
+  font-weight: 800;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  body main section.main-area div.info {
+    padding: 1rem;
+  }
+  body main section.main-area img {
+    width: 90%;
+  }
+  body main section.about-me {
+    padding: 1rem 0.5rem;
+  }
+  body main section.about-me div.desc {
+    width: 80%;
+  }
+  body main section.about-me div.progress-area {
+    width: 80%;
+  }
+  body main section.resume {
+    overflow-x: auto;
+  }
+  body main section.resume section.table {
+    min-width: 800px;
+  }
+  body main section.resume section.picture img {
+    width: 90%;
+  }
+  body main section.resume section.picture div.greenRect,
+  body main section.resume section.picture div.greenRect2,
+  body main section.resume section.picture div.greenRect3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
